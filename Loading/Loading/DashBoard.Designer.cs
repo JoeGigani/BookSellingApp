@@ -1,6 +1,6 @@
 ﻿namespace Loading
 {
-    partial class Books
+    partial class DashBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Books));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -105,8 +105,7 @@
             this.panel3.Location = new System.Drawing.Point(230, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1244, 835);
-            this.panel3.TabIndex = 4;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.TabIndex = 6;
             // 
             // button5
             // 
@@ -359,8 +358,7 @@
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(218, 835);
-            this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.TabIndex = 5;
             // 
             // panel6
             // 
@@ -371,7 +369,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(207, 58);
             this.panel6.TabIndex = 14;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // label10
             // 
@@ -398,14 +395,13 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.BackColor = System.Drawing.Color.SlateGray;
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Location = new System.Drawing.Point(5, 371);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(207, 58);
             this.panel5.TabIndex = 13;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label9
             // 
@@ -439,7 +435,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(207, 58);
             this.panel4.TabIndex = 12;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label7
             // 
@@ -452,7 +447,6 @@
             this.label7.Size = new System.Drawing.Size(74, 31);
             this.label7.TabIndex = 10;
             this.label7.Text = "Users";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox4
             // 
@@ -467,14 +461,13 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.SlateGray;
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Location = new System.Drawing.Point(5, 181);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(207, 58);
             this.panel2.TabIndex = 10;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label6
             // 
@@ -498,7 +491,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label5
             // 
@@ -511,7 +503,6 @@
             this.label5.Size = new System.Drawing.Size(140, 31);
             this.label5.TabIndex = 10;
             this.label5.Text = "Book Shop";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox3
             // 
@@ -523,20 +514,18 @@
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
-            // Books
+            // DashBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Indigo;
+            this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(1486, 859);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Books";
+            this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Books";
+            this.Text = "DashBoard";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -562,30 +551,6 @@
         #endregion
 
         private Panel panel3;
-        private Label label8;
-        private Label label4;
-        private Button button1;
-        private Label label3;
-        private TextBox textBox2;
-        private Label label2;
-        private TextBox textBox1;
-        private PictureBox pictureBox1;
-        private Label label1;
-        private Panel panel1;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private Label label5;
-        private Panel panel4;
-        private Label label7;
-        private PictureBox pictureBox4;
-        private Panel panel2;
-        private Label label6;
-        private Panel panel6;
-        private Label label10;
-        private PictureBox pictureBox6;
-        private Panel panel5;
-        private Label label9;
-        private PictureBox pictureBox5;
         private Button button5;
         private ComboBox comboBox2;
         private Button button4;
@@ -597,5 +562,29 @@
         private TextBox textBox4;
         private ComboBox comboBox1;
         private Label label11;
+        private Label label8;
+        private Label label4;
+        private Button button1;
+        private Label label3;
+        private TextBox textBox2;
+        private Label label2;
+        private TextBox textBox1;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Panel panel1;
+        private Panel panel6;
+        private Label label10;
+        private PictureBox pictureBox6;
+        private Panel panel5;
+        private Label label9;
+        private PictureBox pictureBox5;
+        private Panel panel4;
+        private Label label7;
+        private PictureBox pictureBox4;
+        private Panel panel2;
+        private Label label6;
+        private PictureBox pictureBox2;
+        private Label label5;
+        private PictureBox pictureBox3;
     }
 }
