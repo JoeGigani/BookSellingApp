@@ -85,9 +85,9 @@
             this.label1.ForeColor = System.Drawing.Color.DarkKhaki;
             this.label1.Location = new System.Drawing.Point(108, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 27);
+            this.label1.Size = new System.Drawing.Size(155, 27);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Book Selling";
+            this.label1.Text = "Book Sellings";
             // 
             // pictureBox1
             // 
@@ -217,7 +217,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Tomato;
+            this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(590, 371);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
