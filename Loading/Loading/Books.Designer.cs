@@ -128,9 +128,9 @@
             this.label4.ForeColor = System.Drawing.Color.DarkKhaki;
             this.label4.Location = new System.Drawing.Point(566, 383);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 30);
+            this.label4.Size = new System.Drawing.Size(123, 30);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Book List";
+            this.label4.Text = "Books List";
             // 
             // button1
             // 
@@ -259,7 +259,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackColor = System.Drawing.Color.SlateGray;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Location = new System.Drawing.Point(5, 181);
@@ -508,7 +508,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(251, 38);
             this.comboBox2.TabIndex = 19;
-            this.comboBox2.Text = "Select Category";
+            this.comboBox2.Text = "Filtered By Category";
             // 
             // button5
             // 
