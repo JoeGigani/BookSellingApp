@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label3 = new System.Windows.Forms.Label();
+            this.MyProgress = new System.Windows.Forms.ProgressBar();
+            this.PrecentageLbl = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,40 +73,46 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Loading...";
             // 
-            // progressBar1
+            // MyProgress
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 307);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(575, 12);
-            this.progressBar1.TabIndex = 3;
+            this.MyProgress.ForeColor = System.Drawing.Color.Transparent;
+            this.MyProgress.Location = new System.Drawing.Point(12, 307);
+            this.MyProgress.Name = "MyProgress";
+            this.MyProgress.Size = new System.Drawing.Size(575, 12);
+            this.MyProgress.TabIndex = 3;
             // 
-            // label3
+            // PrecentageLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label3.Location = new System.Drawing.Point(103, 282);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 22);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "%";
+            this.PrecentageLbl.AutoSize = true;
+            this.PrecentageLbl.BackColor = System.Drawing.Color.Transparent;
+            this.PrecentageLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PrecentageLbl.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.PrecentageLbl.Location = new System.Drawing.Point(103, 282);
+            this.PrecentageLbl.Name = "PrecentageLbl";
+            this.PrecentageLbl.Size = new System.Drawing.Size(25, 22);
+            this.PrecentageLbl.TabIndex = 4;
+            this.PrecentageLbl.Text = "%";
             // 
-            // Form1
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Salmon;
             this.ClientSize = new System.Drawing.Size(599, 322);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.PrecentageLbl);
+            this.Controls.Add(this.MyProgress);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Splash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -116,7 +124,8 @@
         private Label label1;
         private PictureBox pictureBox1;
         private Label label2;
-        private ProgressBar progressBar1;
-        private Label label3;
+        private ProgressBar MyProgress;
+        private Label PrecentageLbl;
+        private System.Windows.Forms.Timer timer1;
     }
 }
