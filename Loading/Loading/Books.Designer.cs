@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Books));
             this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.CatCbSearchCb = new System.Windows.Forms.ComboBox();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.ResetBtn = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PriceTb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.QtyTb = new System.Windows.Forms.TextBox();
+            this.BCatCb = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.BAutTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BTitleTb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -83,23 +83,23 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.comboBox2);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.CatCbSearchCb);
+            this.panel3.Controls.Add(this.EditBtn);
+            this.panel3.Controls.Add(this.DeleteBtn);
+            this.panel3.Controls.Add(this.ResetBtn);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.PriceTb);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.QtyTb);
+            this.panel3.Controls.Add(this.BCatCb);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.SaveBtn);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.BAutTb);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.BTitleTb);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(230, 12);
@@ -121,11 +121,11 @@
             this.button5.Text = "REFRESH";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
+            // CatCbSearchCb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.CatCbSearchCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CatCbSearchCb.FormattingEnabled = true;
+            this.CatCbSearchCb.Items.AddRange(new object[] {
             "Progreamming",
             "Network",
             "Math",
@@ -133,50 +133,50 @@
             "Biography",
             "Biology",
             "Chemistery"});
-            this.comboBox2.Location = new System.Drawing.Point(483, 416);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(251, 38);
-            this.comboBox2.TabIndex = 19;
-            this.comboBox2.Text = "Filtered By Category";
+            this.CatCbSearchCb.Location = new System.Drawing.Point(483, 416);
+            this.CatCbSearchCb.Name = "CatCbSearchCb";
+            this.CatCbSearchCb.Size = new System.Drawing.Size(251, 38);
+            this.CatCbSearchCb.TabIndex = 19;
+            this.CatCbSearchCb.Text = "Filtered By Category";
             // 
-            // button4
+            // EditBtn
             // 
-            this.button4.BackColor = System.Drawing.Color.SlateGray;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button4.FlatAppearance.BorderSize = 2;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(514, 230);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 53);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "EDIT";
-            this.button4.UseVisualStyleBackColor = false;
+            this.EditBtn.BackColor = System.Drawing.Color.SlateGray;
+            this.EditBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.EditBtn.FlatAppearance.BorderSize = 2;
+            this.EditBtn.ForeColor = System.Drawing.Color.White;
+            this.EditBtn.Location = new System.Drawing.Point(514, 230);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(159, 53);
+            this.EditBtn.TabIndex = 18;
+            this.EditBtn.Text = "EDIT";
+            this.EditBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.SlateGray;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(695, 230);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 53);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.Color.SlateGray;
+            this.DeleteBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.DeleteBtn.FlatAppearance.BorderSize = 2;
+            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.DeleteBtn.Location = new System.Drawing.Point(695, 230);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(158, 53);
+            this.DeleteBtn.TabIndex = 17;
+            this.DeleteBtn.Text = "DELETE";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // ResetBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.SlateGray;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(876, 230);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 53);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "RESET";
-            this.button2.UseVisualStyleBackColor = false;
+            this.ResetBtn.BackColor = System.Drawing.Color.SlateGray;
+            this.ResetBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.ResetBtn.FlatAppearance.BorderSize = 2;
+            this.ResetBtn.ForeColor = System.Drawing.Color.White;
+            this.ResetBtn.Location = new System.Drawing.Point(876, 230);
+            this.ResetBtn.Name = "ResetBtn";
+            this.ResetBtn.Size = new System.Drawing.Size(162, 53);
+            this.ResetBtn.TabIndex = 16;
+            this.ResetBtn.Text = "RESET";
+            this.ResetBtn.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -190,13 +190,13 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "Price";
             // 
-            // textBox3
+            // PriceTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(1052, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(142, 37);
-            this.textBox3.TabIndex = 14;
+            this.PriceTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PriceTb.Location = new System.Drawing.Point(1052, 149);
+            this.PriceTb.Name = "PriceTb";
+            this.PriceTb.Size = new System.Drawing.Size(142, 37);
+            this.PriceTb.TabIndex = 14;
             // 
             // label13
             // 
@@ -210,19 +210,19 @@
             this.label13.TabIndex = 13;
             this.label13.Text = "Quantity";
             // 
-            // textBox4
+            // QtyTb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(878, 149);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(155, 37);
-            this.textBox4.TabIndex = 12;
+            this.QtyTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QtyTb.Location = new System.Drawing.Point(878, 149);
+            this.QtyTb.Name = "QtyTb";
+            this.QtyTb.Size = new System.Drawing.Size(155, 37);
+            this.QtyTb.TabIndex = 12;
             // 
-            // comboBox1
+            // BCatCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.BCatCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BCatCb.FormattingEnabled = true;
+            this.BCatCb.Items.AddRange(new object[] {
             "Progreamming",
             "Network",
             "Math",
@@ -230,11 +230,11 @@
             "Biography",
             "Biology",
             "Chemistery"});
-            this.comboBox1.Location = new System.Drawing.Point(605, 148);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(251, 38);
-            this.comboBox1.TabIndex = 11;
-            this.comboBox1.Text = "Select Category";
+            this.BCatCb.Location = new System.Drawing.Point(605, 148);
+            this.BCatCb.Name = "BCatCb";
+            this.BCatCb.Size = new System.Drawing.Size(251, 38);
+            this.BCatCb.TabIndex = 11;
+            this.BCatCb.Text = "Select Category";
             // 
             // label11
             // 
@@ -272,18 +272,19 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Books List";
             // 
-            // button1
+            // SaveBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateGray;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(322, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 53);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SaveBtn.BackColor = System.Drawing.Color.SlateGray;
+            this.SaveBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.SaveBtn.FlatAppearance.BorderSize = 2;
+            this.SaveBtn.ForeColor = System.Drawing.Color.White;
+            this.SaveBtn.Location = new System.Drawing.Point(322, 230);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(161, 53);
+            this.SaveBtn.TabIndex = 7;
+            this.SaveBtn.Text = "SAVE";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // label3
             // 
@@ -297,13 +298,13 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Author";
             // 
-            // textBox2
+            // BAutTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(322, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(265, 37);
-            this.textBox2.TabIndex = 5;
+            this.BAutTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BAutTb.Location = new System.Drawing.Point(322, 149);
+            this.BAutTb.Name = "BAutTb";
+            this.BAutTb.Size = new System.Drawing.Size(265, 37);
+            this.BAutTb.TabIndex = 5;
             // 
             // label2
             // 
@@ -317,13 +318,14 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Book Title";
             // 
-            // textBox1
+            // BTitleTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(35, 149);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 37);
-            this.textBox1.TabIndex = 3;
+            this.BTitleTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BTitleTb.Location = new System.Drawing.Point(35, 149);
+            this.BTitleTb.Name = "BTitleTb";
+            this.BTitleTb.Size = new System.Drawing.Size(269, 37);
+            this.BTitleTb.TabIndex = 3;
+            this.BTitleTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox1
             // 
@@ -564,11 +566,11 @@
         private Panel panel3;
         private Label label8;
         private Label label4;
-        private Button button1;
+        private Button SaveBtn;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox BAutTb;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox BTitleTb;
         private PictureBox pictureBox1;
         private Label label1;
         private Panel panel1;
@@ -587,15 +589,15 @@
         private Label label9;
         private PictureBox pictureBox5;
         private Button button5;
-        private ComboBox comboBox2;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private ComboBox CatCbSearchCb;
+        private Button EditBtn;
+        private Button DeleteBtn;
+        private Button ResetBtn;
         private Label label12;
-        private TextBox textBox3;
+        private TextBox PriceTb;
         private Label label13;
-        private TextBox textBox4;
-        private ComboBox comboBox1;
+        private TextBox QtyTb;
+        private ComboBox BCatCb;
         private Label label11;
     }
 }
