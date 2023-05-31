@@ -184,5 +184,31 @@ namespace Loading
                 }
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (BTitleTb.Text == "" || BAutTb.Text == "" || QtyTb.Text == "" || PriceTb.Text == "" || BCatCb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "Update BookTbl set BTitle ='"+BTitleTb.Text+"', BAuthor= '"+BAutTb.Text+"', BCat='"+BCatCb.SelectedItem.ToString()+"', BQty="+QtyTb.Text+", BPrice="+PriceTb.Text+" where BId="+key+";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Book Updated Successfully");
+                    Con.Close();
+                    populate();
+                    Reset();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
