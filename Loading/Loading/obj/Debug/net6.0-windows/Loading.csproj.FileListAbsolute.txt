@@ -20,3 +20,13 @@ C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\obj\Debug\net6.0-windows\L
 C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\obj\Debug\net6.0-windows\ref\Loading.dll
 C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\obj\Debug\net6.0-windows\Loading.pdb
 C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\obj\Debug\net6.0-windows\Loading.genruntimeconfig.cache
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\obj\Debug\net6.0-windows\Loading.csproj.CopyComplete
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\Guna.UI2.dll
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\Admin\Desktop\booksellingapp\Loading\Loading\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll

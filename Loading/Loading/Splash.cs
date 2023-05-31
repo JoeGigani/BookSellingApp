@@ -11,8 +11,8 @@ namespace Loading
         {
             startpos += 1;
             MyProgress.Value = startpos;
-            PrecentageLbl.Text = startpos+"%";
-            if(MyProgress.Value == 100)
+            PrecentageLbl.Text = startpos + "%";
+            if (MyProgress.Value == 100)
             {
                 MyProgress.Value = 0;
                 timer1.Stop();
