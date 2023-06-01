@@ -37,21 +37,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.BookDGV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
-            this.DeleteBtn = new System.Windows.Forms.Button();
             this.ResetBtn = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.PriceTb = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.QtyTb = new System.Windows.Forms.TextBox();
-            this.BCatCb = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.BAutTb = new System.Windows.Forms.TextBox();
+            this.BillQtyTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BTitleTb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -73,6 +65,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,6 +79,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.BillDGV);
             this.panel3.Controls.Add(this.label6);
@@ -93,21 +87,13 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.ClientNameTb);
             this.panel3.Controls.Add(this.BookDGV);
-            this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.EditBtn);
-            this.panel3.Controls.Add(this.DeleteBtn);
             this.panel3.Controls.Add(this.ResetBtn);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.PriceTb);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.QtyTb);
-            this.panel3.Controls.Add(this.BCatCb);
-            this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.SaveBtn);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.BAutTb);
+            this.panel3.Controls.Add(this.BillQtyTb);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.BTitleTb);
             this.panel3.Controls.Add(this.pictureBox1);
@@ -167,19 +153,7 @@
             this.BookDGV.ThemeStyle.RowsStyle.Height = 25;
             this.BookDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.BookDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.SlateGray;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button5.FlatAppearance.BorderSize = 2;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(652, 784);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(134, 38);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "REFRESH";
-            this.button5.UseVisualStyleBackColor = false;
+            this.BookDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BookDGV_CellContentClick);
             // 
             // EditBtn
             // 
@@ -187,25 +161,12 @@
             this.EditBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
             this.EditBtn.FlatAppearance.BorderSize = 2;
             this.EditBtn.ForeColor = System.Drawing.Color.White;
-            this.EditBtn.Location = new System.Drawing.Point(552, 703);
+            this.EditBtn.Location = new System.Drawing.Point(879, 725);
             this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(159, 53);
+            this.EditBtn.Size = new System.Drawing.Size(120, 49);
             this.EditBtn.TabIndex = 18;
-            this.EditBtn.Text = "EDIT";
+            this.EditBtn.Text = "PRINT";
             this.EditBtn.UseVisualStyleBackColor = false;
-            // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.BackColor = System.Drawing.Color.SlateGray;
-            this.DeleteBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.DeleteBtn.FlatAppearance.BorderSize = 2;
-            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
-            this.DeleteBtn.Location = new System.Drawing.Point(733, 703);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(158, 53);
-            this.DeleteBtn.TabIndex = 17;
-            this.DeleteBtn.Text = "DELETE";
-            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
             // ResetBtn
             // 
@@ -219,76 +180,6 @@
             this.ResetBtn.TabIndex = 16;
             this.ResetBtn.Text = "RESET";
             this.ResetBtn.UseVisualStyleBackColor = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label12.Location = new System.Drawing.Point(1112, 520);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 31);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Price";
-            // 
-            // PriceTb
-            // 
-            this.PriceTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PriceTb.Location = new System.Drawing.Point(1112, 554);
-            this.PriceTb.Name = "PriceTb";
-            this.PriceTb.Size = new System.Drawing.Size(142, 37);
-            this.PriceTb.TabIndex = 14;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label13.Location = new System.Drawing.Point(938, 520);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(118, 31);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "Quantity";
-            // 
-            // QtyTb
-            // 
-            this.QtyTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QtyTb.Location = new System.Drawing.Point(938, 554);
-            this.QtyTb.Name = "QtyTb";
-            this.QtyTb.Size = new System.Drawing.Size(155, 37);
-            this.QtyTb.TabIndex = 12;
-            // 
-            // BCatCb
-            // 
-            this.BCatCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BCatCb.FormattingEnabled = true;
-            this.BCatCb.Items.AddRange(new object[] {
-            "Progreamming",
-            "Network",
-            "Math",
-            "Phisychs",
-            "Biography",
-            "Biology",
-            "Chemistery"});
-            this.BCatCb.Location = new System.Drawing.Point(1004, 478);
-            this.BCatCb.Name = "BCatCb";
-            this.BCatCb.Size = new System.Drawing.Size(184, 38);
-            this.BCatCb.TabIndex = 11;
-            this.BCatCb.Text = "Select Category";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label11.Location = new System.Drawing.Point(1004, 445);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(148, 31);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Categories";
             // 
             // label8
             // 
@@ -340,13 +231,14 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Quantity";
             // 
-            // BAutTb
+            // BillQtyTb
             // 
-            this.BAutTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BAutTb.Location = new System.Drawing.Point(253, 166);
-            this.BAutTb.Name = "BAutTb";
-            this.BAutTb.Size = new System.Drawing.Size(153, 37);
-            this.BAutTb.TabIndex = 5;
+            this.BillQtyTb.Enabled = false;
+            this.BillQtyTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BillQtyTb.Location = new System.Drawing.Point(253, 166);
+            this.BillQtyTb.Name = "BillQtyTb";
+            this.BillQtyTb.Size = new System.Drawing.Size(153, 37);
+            this.BillQtyTb.TabIndex = 5;
             // 
             // label2
             // 
@@ -362,6 +254,7 @@
             // 
             // BTitleTb
             // 
+            this.BTitleTb.Enabled = false;
             this.BTitleTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BTitleTb.Location = new System.Drawing.Point(35, 166);
             this.BTitleTb.Name = "BTitleTb";
@@ -470,6 +363,7 @@
             // 
             // BilPriceTb
             // 
+            this.BilPriceTb.Enabled = false;
             this.BilPriceTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BilPriceTb.Location = new System.Drawing.Point(253, 251);
             this.BilPriceTb.Name = "BilPriceTb";
@@ -525,11 +419,11 @@
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.BillDGV.DefaultCellStyle = dataGridViewCellStyle9;
             this.BillDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.BillDGV.Location = new System.Drawing.Point(686, 101);
+            this.BillDGV.Location = new System.Drawing.Point(660, 101);
             this.BillDGV.Name = "BillDGV";
             this.BillDGV.RowHeadersVisible = false;
             this.BillDGV.RowTemplate.Height = 25;
-            this.BillDGV.Size = new System.Drawing.Size(526, 303);
+            this.BillDGV.Size = new System.Drawing.Size(552, 405);
             this.BillDGV.TabIndex = 27;
             this.BillDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.BillDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -590,6 +484,18 @@
             this.Column5.HeaderText = "TOTAL";
             this.Column5.Name = "Column5";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.label11.Location = new System.Drawing.Point(903, 671);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 30);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Total";
+            // 
             // Billing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -632,21 +538,13 @@
         private Label label7;
         private TextBox ClientNameTb;
         private Guna.UI2.WinForms.Guna2DataGridView BookDGV;
-        private Button button5;
         private Button EditBtn;
-        private Button DeleteBtn;
         private Button ResetBtn;
-        private Label label12;
-        private TextBox PriceTb;
-        private Label label13;
-        private TextBox QtyTb;
-        private ComboBox BCatCb;
-        private Label label11;
         private Label label8;
         private Label label4;
         private Button SaveBtn;
         private Label label3;
-        private TextBox BAutTb;
+        private TextBox BillQtyTb;
         private Label label2;
         private TextBox BTitleTb;
         private PictureBox pictureBox1;
@@ -657,5 +555,6 @@
         private PictureBox pictureBox6;
         private Label label5;
         private PictureBox pictureBox3;
+        private Label label11;
     }
 }
