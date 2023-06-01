@@ -40,7 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.UPassTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.UNameTb = new System.Windows.Forms.TextBox();
+            this.UnameTb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -104,7 +104,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.UPassTb);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.UNameTb);
+            this.panel3.Controls.Add(this.UnameTb);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(232, 14);
@@ -184,13 +184,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "User Name";
             // 
-            // UNameTb
+            // UnameTb
             // 
-            this.UNameTb.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UNameTb.Location = new System.Drawing.Point(144, 133);
-            this.UNameTb.Name = "UNameTb";
-            this.UNameTb.Size = new System.Drawing.Size(199, 36);
-            this.UNameTb.TabIndex = 3;
+            this.UnameTb.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UnameTb.Location = new System.Drawing.Point(144, 133);
+            this.UnameTb.Name = "UnameTb";
+            this.UnameTb.Size = new System.Drawing.Size(199, 36);
+            this.UnameTb.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -245,7 +245,7 @@
         private Label label3;
         private TextBox UPassTb;
         private Label label2;
-        private TextBox UNameTb;
+        private TextBox UnameTb;
         private PictureBox pictureBox1;
         private Label label7;
         private Label label6;

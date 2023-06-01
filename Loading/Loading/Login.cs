@@ -19,7 +19,6 @@ namespace Loading
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\BookShopDB.mdf;Integrated Security=True;Connect Timeout=30");
         public static string UserName = "";
-
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
@@ -33,18 +32,18 @@ namespace Loading
         private void button1_Click(object sender, EventArgs e)
         {
             Con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from UserTbl where UName = '" + UNameTb.Text + "' and UPass='"+UPassTb.Text+"'", Con);
+            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from UserTbl where UName = '"+UnameTb.Text+"' and UPass= '"+UPassTb.Text+"' ", Con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if(dt.Rows[0][0].ToString() == "1")
             {
-                UserName = UNameTb.Text;
+                UserName = UnameTb.Text;
                 Billing obj = new Billing();
                 obj.Show();
                 this.Hide();
                 Con.Close();
             }
-            else
+            else 
             {
                 MessageBox.Show("Wrong Username or Password");
             }
