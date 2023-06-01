@@ -38,9 +38,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UPassTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UNameTb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -102,9 +102,9 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.UPassTb);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.UNameTb);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(232, 14);
@@ -164,13 +164,13 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Password";
             // 
-            // textBox2
+            // UPassTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(144, 204);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 36);
-            this.textBox2.TabIndex = 5;
+            this.UPassTb.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UPassTb.Location = new System.Drawing.Point(144, 204);
+            this.UPassTb.Name = "UPassTb";
+            this.UPassTb.Size = new System.Drawing.Size(199, 36);
+            this.UPassTb.TabIndex = 5;
             // 
             // label2
             // 
@@ -184,13 +184,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "User Name";
             // 
-            // textBox1
+            // UNameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(144, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 36);
-            this.textBox1.TabIndex = 3;
+            this.UNameTb.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UNameTb.Location = new System.Drawing.Point(144, 133);
+            this.UNameTb.Name = "UNameTb";
+            this.UNameTb.Size = new System.Drawing.Size(199, 36);
+            this.UNameTb.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -243,9 +243,9 @@
         private Label label4;
         private Button button1;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox UPassTb;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox UNameTb;
         private PictureBox pictureBox1;
         private Label label7;
         private Label label6;
