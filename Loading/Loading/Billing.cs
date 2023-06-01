@@ -53,5 +53,18 @@ namespace Loading
                 key = Convert.ToInt32(BookDGV.SelectedRows[0].Cells[0].ToString());
             }
         }
+
+        private void Reset()
+        {
+            BTitleTb.Text = "";
+            BillQtyTb.Text = "";
+            BilPriceTb.Text = "";
+            ClientNameTb.Text = "";
+        }
+
+        private void ResetBtn_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
     }
 }
