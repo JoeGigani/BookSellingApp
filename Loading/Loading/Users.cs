@@ -74,5 +74,47 @@ namespace Loading
         {
             Reset();
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "delete from UserTbl where UId" + key + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Book Deleted Successfully");
+                    Con.Close();
+                    populate();
+                    Reset();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+        int key = 0;
+        private void UserDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            UnameTb.Text = UserDGV.SelectedRows[0].Cells[1].ToString();
+            PhoneTb.Text = UserDGV.SelectedRows[0].Cells[2].ToString();
+            AddTb.Text = UserDGV.SelectedRows[0].Cells[3].ToString();
+            PassTb.Text = UserDGV.SelectedRows[0].Cells[4].ToString();
+            if (UnameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(UserDGV.SelectedRows[0].Cells[0].ToString());
+            }
+        }
     }
 }
