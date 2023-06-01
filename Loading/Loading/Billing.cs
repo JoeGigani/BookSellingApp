@@ -34,9 +34,26 @@ namespace Loading
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            int n = 0;
+            if(BillQtyTb.Text == "" || Convert.ToInt32(BillQtyTb.Text) > stock)
+            {
+                MessageBox.Show("No Enough Stock");
+            }
+            else
+            {
+                int total = Convert.ToInt32(BillQtyTb.Text) * Convert.ToInt32(BilPriceTb.Text);
+                DataGridViewRow newRow = new DataGridViewRow();
+                newRow.CreateCells(BillDGV);
+                newRow.Cells[0].Value = n + 1;
+                newRow.Cells[1].Value = BTitleTb.Text;
+                newRow.Cells[2].Value = BillQtyTb.Text;
+                newRow.Cells[3].Value = BilPriceTb.Text;
+                newRow.Cells[4].Value = total;
+                BillDGV .Rows.Add(newRow);
+                n++;
+            }
         }
-        int key = 0;
+        int key = 0,stock = 0;
         private void BookDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             BTitleTb.Text = BookDGV.SelectedRows[0].Cells[1].ToString();
@@ -47,10 +64,12 @@ namespace Loading
             if (BTitleTb.Text == "")
             {
                 key = 0;
+                stock = 0;
             }
             else
             {
                 key = Convert.ToInt32(BookDGV.SelectedRows[0].Cells[0].ToString());
+                stock = Convert.ToInt32(BookDGV.SelectedRows[0].Cells[4].ToString());
             }
         }
 
