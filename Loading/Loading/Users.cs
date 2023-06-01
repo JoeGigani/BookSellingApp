@@ -116,5 +116,31 @@ namespace Loading
                 key = Convert.ToInt32(UserDGV.SelectedRows[0].Cells[0].ToString());
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (UnameTb.Text == "" || AddTb.Text == "" || PassTb.Text == "" || PhoneTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "Update UserTbl set Uname ='" + UnameTb.Text + "', UPhone= '" + PhoneTb.Text + "', UAdd='" + AddTb.Text + "', UPass='" + PassTb.Text + "'where UId=" + key + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("User Updated Successfully");
+                    Con.Close();
+                    populate();
+                    Reset();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
