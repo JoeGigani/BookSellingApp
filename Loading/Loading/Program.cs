@@ -17,7 +17,7 @@ namespace Loading
             ApplicationConfiguration.Initialize();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Users());
+            Application.Run(new Billing());
         }
     }
 }
