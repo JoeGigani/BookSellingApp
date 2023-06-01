@@ -53,13 +53,26 @@ namespace Loading
                     MessageBox.Show("User Saved Successfully");
                     Con.Close();
                     populate();
-                    //Reset();
+                    Reset();
                 }
                 catch (Exception Ex)
                 {
                     MessageBox.Show(Ex.Message);
                 }
             }
+        }
+
+        private void Reset()
+        {
+            UnameTb.Text = "";
+            PassTb.Text = "";
+            PhoneTb.Text = "";
+            AddTb.Text = "";
+        }
+
+        private void ResetBtn_Click(object sender, EventArgs e)
+        {
+            Reset();
         }
     }
 }
