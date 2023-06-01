@@ -27,7 +27,7 @@ namespace Loading
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            //BookDGV.DataSource = ds.Tables[0];
+            BookDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
         private void Filter()

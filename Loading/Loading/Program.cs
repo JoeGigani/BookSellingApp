@@ -1,3 +1,7 @@
+using System;
+using System.Windows.Forms;
+
+
 namespace Loading
 {
     internal static class Program
@@ -11,7 +15,9 @@ namespace Loading
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Splash());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Users());
         }
     }
 }

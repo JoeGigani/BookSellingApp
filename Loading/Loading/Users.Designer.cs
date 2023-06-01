@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.ResetBtn = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PassTb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.AddTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PhoneTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UnameTb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -64,7 +64,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.UserDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -77,27 +77,27 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.guna2DataGridView1);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.UserDGV);
+            this.panel3.Controls.Add(this.EditBtn);
+            this.panel3.Controls.Add(this.DeleteBtn);
+            this.panel3.Controls.Add(this.ResetBtn);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.PassTb);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.AddTb);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.SaveBtn);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.PhoneTb);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.UnameTb);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(230, 12);
@@ -106,44 +106,44 @@
             this.panel3.TabIndex = 6;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button4
+            // EditBtn
             // 
-            this.button4.BackColor = System.Drawing.Color.SlateGray;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button4.FlatAppearance.BorderSize = 2;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(514, 230);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 53);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "EDIT";
-            this.button4.UseVisualStyleBackColor = false;
+            this.EditBtn.BackColor = System.Drawing.Color.SlateGray;
+            this.EditBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.EditBtn.FlatAppearance.BorderSize = 2;
+            this.EditBtn.ForeColor = System.Drawing.Color.White;
+            this.EditBtn.Location = new System.Drawing.Point(514, 230);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(159, 53);
+            this.EditBtn.TabIndex = 18;
+            this.EditBtn.Text = "EDIT";
+            this.EditBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.SlateGray;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(695, 230);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 53);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.Color.SlateGray;
+            this.DeleteBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.DeleteBtn.FlatAppearance.BorderSize = 2;
+            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.DeleteBtn.Location = new System.Drawing.Point(695, 230);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(158, 53);
+            this.DeleteBtn.TabIndex = 17;
+            this.DeleteBtn.Text = "DELETE";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // ResetBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.SlateGray;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(876, 230);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 53);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "RESET";
-            this.button2.UseVisualStyleBackColor = false;
+            this.ResetBtn.BackColor = System.Drawing.Color.SlateGray;
+            this.ResetBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.ResetBtn.FlatAppearance.BorderSize = 2;
+            this.ResetBtn.ForeColor = System.Drawing.Color.White;
+            this.ResetBtn.Location = new System.Drawing.Point(876, 230);
+            this.ResetBtn.Name = "ResetBtn";
+            this.ResetBtn.Size = new System.Drawing.Size(162, 53);
+            this.ResetBtn.TabIndex = 16;
+            this.ResetBtn.Text = "RESET";
+            this.ResetBtn.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -157,13 +157,13 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "Password";
             // 
-            // textBox3
+            // PassTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(944, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(252, 37);
-            this.textBox3.TabIndex = 14;
+            this.PassTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PassTb.Location = new System.Drawing.Point(944, 149);
+            this.PassTb.Name = "PassTb";
+            this.PassTb.Size = new System.Drawing.Size(252, 37);
+            this.PassTb.TabIndex = 14;
             // 
             // label13
             // 
@@ -177,13 +177,13 @@
             this.label13.TabIndex = 13;
             this.label13.Text = "Address";
             // 
-            // textBox4
+            // AddTb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(665, 149);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(273, 37);
-            this.textBox4.TabIndex = 12;
+            this.AddTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddTb.Location = new System.Drawing.Point(665, 149);
+            this.AddTb.Name = "AddTb";
+            this.AddTb.Size = new System.Drawing.Size(273, 37);
+            this.AddTb.TabIndex = 12;
             // 
             // label8
             // 
@@ -209,18 +209,19 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Users List";
             // 
-            // button1
+            // SaveBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateGray;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(322, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 53);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SaveBtn.BackColor = System.Drawing.Color.SlateGray;
+            this.SaveBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.SaveBtn.FlatAppearance.BorderSize = 2;
+            this.SaveBtn.ForeColor = System.Drawing.Color.White;
+            this.SaveBtn.Location = new System.Drawing.Point(322, 230);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(161, 53);
+            this.SaveBtn.TabIndex = 7;
+            this.SaveBtn.Text = "SAVE";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // label3
             // 
@@ -234,13 +235,13 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Phone";
             // 
-            // textBox2
+            // PhoneTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(322, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(265, 37);
-            this.textBox2.TabIndex = 5;
+            this.PhoneTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PhoneTb.Location = new System.Drawing.Point(322, 149);
+            this.PhoneTb.Name = "PhoneTb";
+            this.PhoneTb.Size = new System.Drawing.Size(265, 37);
+            this.PhoneTb.TabIndex = 5;
             // 
             // label2
             // 
@@ -254,13 +255,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "User Name";
             // 
-            // textBox1
+            // UnameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(21, 149);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(295, 37);
-            this.textBox1.TabIndex = 3;
+            this.UnameTb.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UnameTb.Location = new System.Drawing.Point(21, 149);
+            this.UnameTb.Name = "UnameTb";
+            this.UnameTb.Size = new System.Drawing.Size(295, 37);
+            this.UnameTb.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -452,56 +453,56 @@
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
-            // guna2DataGridView1
+            // UserDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(6, 417);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowTemplate.Height = 25;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1233, 415);
-            this.guna2DataGridView1.TabIndex = 22;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 25;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.UserDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UserDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.UserDGV.ColumnHeadersHeight = 25;
+            this.UserDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.UserDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            this.UserDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.UserDGV.Location = new System.Drawing.Point(6, 438);
+            this.UserDGV.Name = "UserDGV";
+            this.UserDGV.RowHeadersVisible = false;
+            this.UserDGV.RowTemplate.Height = 25;
+            this.UserDGV.Size = new System.Drawing.Size(1233, 372);
+            this.UserDGV.TabIndex = 23;
+            this.UserDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.UserDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.UserDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.UserDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.UserDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.UserDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.UserDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.UserDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Indigo;
+            this.UserDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.UserDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UserDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.UserDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.UserDGV.ThemeStyle.HeaderStyle.Height = 25;
+            this.UserDGV.ThemeStyle.ReadOnly = false;
+            this.UserDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.UserDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.UserDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UserDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.UserDGV.ThemeStyle.RowsStyle.Height = 25;
+            this.UserDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.UserDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // Users
             // 
@@ -533,7 +534,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -541,20 +542,20 @@
         #endregion
 
         private Panel panel3;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private Button EditBtn;
+        private Button DeleteBtn;
+        private Button ResetBtn;
         private Label label12;
-        private TextBox textBox3;
+        private TextBox PassTb;
         private Label label13;
-        private TextBox textBox4;
+        private TextBox AddTb;
         private Label label8;
         private Label label4;
-        private Button button1;
+        private Button SaveBtn;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox PhoneTb;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox UnameTb;
         private PictureBox pictureBox1;
         private Label label1;
         private Panel panel1;
@@ -572,6 +573,6 @@
         private PictureBox pictureBox2;
         private Label label5;
         private PictureBox pictureBox3;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView UserDGV;
     }
 }
