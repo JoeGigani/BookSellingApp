@@ -101,6 +101,17 @@ namespace Loading
         }
 
         int prodid, prodqty, prodprice, tottal, pos = 60;
+
+        private void Billing_Load(object sender, EventArgs e)
+        {
+            UserNameLbl.Text = Login.UserName;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         string prodname;
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {

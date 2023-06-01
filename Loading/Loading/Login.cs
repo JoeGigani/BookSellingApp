@@ -18,7 +18,7 @@ namespace Loading
             InitializeComponent();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\BookShopDB.mdf;Integrated Security=True;Connect Timeout=30");
-
+        public static string UserName = "";
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
@@ -38,7 +38,8 @@ namespace Loading
             sda.Fill(dt);
             if(dt.Rows[0][0].ToString() == "1")
             {
-                Books obj = new Books();
+                UserName = UNameTb.Text;
+                Billing obj = new Billing();
                 obj.Show();
                 this.Hide();
                 Con.Close();
