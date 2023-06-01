@@ -50,7 +50,7 @@ namespace Loading
                 MessageBox.Show(Ex.Message);
             }
         }
-        int n = 0;
+        int n = 0, Grdtotal=0;
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             
@@ -71,6 +71,8 @@ namespace Loading
                 BillDGV .Rows.Add(newRow);
                 n++;
                 UpdateBook();
+                Grdtotal = Grdtotal + total;
+                TotalLbl.Text = "Rs" + Grdtotal;
             }
         }
         int key = 0,stock = 0;
@@ -90,6 +92,48 @@ namespace Loading
             {
                 key = Convert.ToInt32(BookDGV.SelectedRows[0].Cells[0].ToString());
                 stock = Convert.ToInt32(BookDGV.SelectedRows[0].Cells[4].ToString());
+            }
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        int prodid, prodqty, prodprice, tottal, pos = 60;
+        string prodname;
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Book Shop", new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Red, new Point(80));
+            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Century Gothic", 10, FontStyle.Bold), Brushes.Red, new Point(26,40));
+            foreach(DataGridViewRow row in BillDGV.Rows)
+            {
+                prodid = Convert.ToInt32(row.Cells["Column1"].Value);
+                prodname = "" + row.Cells["Column2"].Value;
+                prodprice = Convert.ToInt32(row.Cells["Column3"].Value);
+                prodqty = Convert.ToInt32(row.Cells["Column4"].Value);
+                tottal = Convert.ToInt32(row.Cells["Column5"].Value);
+                e.Graphics.DrawString("" + prodid, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(26, pos));
+                e.Graphics.DrawString("" + prodname, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(45, pos));
+                e.Graphics.DrawString("" + prodprice, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(120, pos));
+                e.Graphics.DrawString("" + prodqty, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(170, pos));
+                e.Graphics.DrawString("" + tottal, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(235, pos));
+                pos = pos + 20;
+            }
+            e.Graphics.DrawString("Grand Total: Rs" + Grdtotal, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(60, pos + 50));
+            e.Graphics.DrawString("*****BOOKSTORE******", new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(40, pos + 85));
+            BillDGV.Rows.Clear();
+            BillDGV.Refresh();
+            pos = 100;
+            Grdtotal = 0;
+        }
+
+        private void PrintBtn_Click(object sender, EventArgs e)
+        {
+            printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 285, 600);
+            if(printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
             }
         }
 
