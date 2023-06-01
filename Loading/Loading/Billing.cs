@@ -31,10 +31,29 @@ namespace Loading
             BookDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
-
+        private void UpdateBook()
+        {
+            int newQty = stock - Convert.ToInt32(BillQtyTb);
+            try
+            {
+                Con.Open();
+                string query = "Update BookTbl BilQty=" + newQty + " where BId=" + key + ";";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Book Updated Successfully");
+                Con.Close();
+                populate();
+                //Reset();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+        int n = 0;
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            int n = 0;
+            
             if(BillQtyTb.Text == "" || Convert.ToInt32(BillQtyTb.Text) > stock)
             {
                 MessageBox.Show("No Enough Stock");
@@ -51,6 +70,7 @@ namespace Loading
                 newRow.Cells[4].Value = total;
                 BillDGV .Rows.Add(newRow);
                 n++;
+                UpdateBook();
             }
         }
         int key = 0,stock = 0;
